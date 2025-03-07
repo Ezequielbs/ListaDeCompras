@@ -132,5 +132,10 @@ namespace ListaDeCompras.Formulario
             cbCategoria.Items.Clear();
             cbUnMedida.Items.Clear();
         }
+
+        private void txtIdProduto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

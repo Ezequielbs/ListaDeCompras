@@ -47,6 +47,8 @@
             this.btCancelar = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btEditar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabela)).BeginInit();
             this.gpCadastro.SuspendLayout();
             this.SuspendLayout();
@@ -233,7 +235,7 @@
             // 
             this.lbData.AutoSize = true;
             this.lbData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbData.Location = new System.Drawing.Point(12, 9);
+            this.lbData.Location = new System.Drawing.Point(142, 5);
             this.lbData.Name = "lbData";
             this.lbData.Size = new System.Drawing.Size(44, 16);
             this.lbData.TabIndex = 10;
@@ -241,7 +243,7 @@
             // 
             // txtIdProduto
             // 
-            this.txtIdProduto.Location = new System.Drawing.Point(44, 184);
+            this.txtIdProduto.Location = new System.Drawing.Point(44, 194);
             this.txtIdProduto.Name = "txtIdProduto";
             this.txtIdProduto.Size = new System.Drawing.Size(142, 20);
             this.txtIdProduto.TabIndex = 11;
@@ -250,7 +252,7 @@
             // btBuscar
             // 
             this.btBuscar.BackColor = System.Drawing.Color.SteelBlue;
-            this.btBuscar.Location = new System.Drawing.Point(192, 182);
+            this.btBuscar.Location = new System.Drawing.Point(192, 191);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(58, 23);
             this.btBuscar.TabIndex = 12;
@@ -303,11 +305,33 @@
             this.btEditar.UseVisualStyleBackColor = false;
             this.btEditar.Click += new System.EventHandler(this.btEditar_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(42, 181);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(154, 12);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Informe o ID para realizar busca";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(2, 5);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 16);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Data do Cadastro:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btEditar);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btCancelar);
@@ -349,6 +373,8 @@
         private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.Button btEditar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 

@@ -42,9 +42,11 @@
             this.txtNomeProduto = new System.Windows.Forms.TextBox();
             this.lbData = new System.Windows.Forms.Label();
             this.gpCadastro = new System.Windows.Forms.GroupBox();
-            this.dgvTabela = new System.Windows.Forms.DataGridView();
             this.btBuscar = new System.Windows.Forms.Button();
             this.txtIdProduto = new System.Windows.Forms.TextBox();
+            this.dgvTabela = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.gpCadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabela)).BeginInit();
             this.SuspendLayout();
@@ -224,7 +226,7 @@
             // 
             this.lbData.AutoSize = true;
             this.lbData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbData.Location = new System.Drawing.Point(8, 14);
+            this.lbData.Location = new System.Drawing.Point(163, 14);
             this.lbData.Name = "lbData";
             this.lbData.Size = new System.Drawing.Size(44, 16);
             this.lbData.TabIndex = 19;
@@ -233,6 +235,7 @@
             // gpCadastro
             // 
             this.gpCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.gpCadastro.Controls.Add(this.label5);
             this.gpCadastro.Controls.Add(this.btCancelar);
             this.gpCadastro.Controls.Add(this.label4);
             this.gpCadastro.Controls.Add(this.btAtualizar);
@@ -257,18 +260,10 @@
             this.gpCadastro.Text = "Editar Produto";
             this.gpCadastro.Enter += new System.EventHandler(this.gpCadastro_Enter);
             // 
-            // dgvTabela
-            // 
-            this.dgvTabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTabela.Location = new System.Drawing.Point(40, 33);
-            this.dgvTabela.Name = "dgvTabela";
-            this.dgvTabela.Size = new System.Drawing.Size(689, 150);
-            this.dgvTabela.TabIndex = 17;
-            // 
             // btBuscar
             // 
             this.btBuscar.BackColor = System.Drawing.Color.SteelBlue;
-            this.btBuscar.Location = new System.Drawing.Point(173, 24);
+            this.btBuscar.Location = new System.Drawing.Point(173, 28);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(58, 23);
             this.btBuscar.TabIndex = 21;
@@ -278,16 +273,46 @@
             // 
             // txtIdProduto
             // 
-            this.txtIdProduto.Location = new System.Drawing.Point(25, 26);
+            this.txtIdProduto.Location = new System.Drawing.Point(25, 31);
             this.txtIdProduto.Name = "txtIdProduto";
             this.txtIdProduto.Size = new System.Drawing.Size(142, 20);
             this.txtIdProduto.TabIndex = 20;
+            this.txtIdProduto.TextChanged += new System.EventHandler(this.txtIdProduto_TextChanged);
+            // 
+            // dgvTabela
+            // 
+            this.dgvTabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTabela.Location = new System.Drawing.Point(40, 33);
+            this.dgvTabela.Name = "dgvTabela";
+            this.dgvTabela.Size = new System.Drawing.Size(689, 150);
+            this.dgvTabela.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 14);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 16);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Data do Cadastro:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(23, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(154, 12);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Informe o ID para realizar busca";
             // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.lbData);
             this.Controls.Add(this.gpCadastro);
             this.Controls.Add(this.dgvTabela);
@@ -320,5 +345,7 @@
         private System.Windows.Forms.DataGridView dgvTabela;
         private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.TextBox txtIdProduto;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }
